@@ -14,7 +14,7 @@ CORS(app, resources={'/': {'origins': '*'}})
 # Home
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return 'Hello Test app'
 
 
 @app.route('/movies', methods=['GET'])

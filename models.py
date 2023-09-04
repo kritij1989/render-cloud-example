@@ -4,12 +4,12 @@ from sqlalchemy import Column, String, Integer, DateTime
 import json
 
 # DB_HOST=os.getenv('DB_HOST','localhost:5432')
-DB_HOST=os.getenv('DB_HOST','dpg-cjqnu3ojbais73e46pk0-a.oregon-postgres.render.com')
+DB_HOST=os.getenv('DB_HOST')
 # DB_USER=os.getenv('DB_USER','postgres')
-DB_USER=os.getenv('DB_USER','castagency_user')
+DB_USER=os.getenv('DB_USER')
 # DB_PASSWORD=os.getenv('DB_PASSWORD','Nainu1234')
-DB_PASSWORD=os.getenv('DB_PASSWORD','hWinakJgpptmJd6nYrAOD11myI4fVVUM')
-DB_NAME=os.getenv('DB_NAME','castagency')
+DB_PASSWORD=os.getenv('DB_PASSWORD')
+DB_NAME=os.getenv('DB_NAME')
 DB_PATH="postgresql://{}:{}@{}/{}".format(DB_USER,DB_PASSWORD, DB_HOST, DB_NAME)
 
 db = SQLAlchemy()
