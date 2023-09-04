@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "98dae0c6-2268-473c-ae0b-e7887e75842e",
+		"name": "render_EndPoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18930671"
+	},
+	"item": [
+		{
+			"name": "Movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtwSWlmTVNya3VyRzZHanV1cVhtRiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5a3JpdGkudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0ZjAyYTEzODI3Nzc5YmE5NmVkZWQwYSIsImF1ZCI6Im1vdmllcyIsImlhdCI6MTY5MzgwNDE2NywiZXhwIjoxNjkzODkwNTY3LCJhenAiOiJjNEx2cW1tTm4xblg1aVUwcFZjcnMxNFNhNTFMaExRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.Hv-2cmG8EsjST0HjR1PyT9hBK5AYiWe2q_J7EoF0EuNpLJSQA_TkdEWsK0L7AVMWLwRFea2UwiDkArtkRPt-1WLZYoaInFGojFZguPymqK2fFsapRwVhvIMS_fDvczX4KHu8VBU4FxCdqOj_BlmaWAUfdqeKAV9PZtvCbWgjaITZoh09hxUnLIwXMUy-ibflp2Pj0ckOiIWePsTIOH-Fk25aqKS1AT1tTDhAaq17hlvlWVALUiZpw6AJdMrRGTrE_5cwhg0W-dLXgt6cxVpGomrUPj_Uh5Xc2qmJCnhRw03kCNW9SzgVRKLX8A-EEHUpq5h9u1oLzUcKmExpeknL9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://render-api-example.onrender.com/movies",
+					"protocol": "https",
+					"host": [
+						"render-api-example",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtwSWlmTVNya3VyRzZHanV1cVhtRiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5a3JpdGkudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0ZjAyYTEzODI3Nzc5YmE5NmVkZWQwYSIsImF1ZCI6Im1vdmllcyIsImlhdCI6MTY5MzgwNDE2NywiZXhwIjoxNjkzODkwNTY3LCJhenAiOiJjNEx2cW1tTm4xblg1aVUwcFZjcnMxNFNhNTFMaExRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.Hv-2cmG8EsjST0HjR1PyT9hBK5AYiWe2q_J7EoF0EuNpLJSQA_TkdEWsK0L7AVMWLwRFea2UwiDkArtkRPt-1WLZYoaInFGojFZguPymqK2fFsapRwVhvIMS_fDvczX4KHu8VBU4FxCdqOj_BlmaWAUfdqeKAV9PZtvCbWgjaITZoh09hxUnLIwXMUy-ibflp2Pj0ckOiIWePsTIOH-Fk25aqKS1AT1tTDhAaq17hlvlWVALUiZpw6AJdMrRGTrE_5cwhg0W-dLXgt6cxVpGomrUPj_Uh5Xc2qmJCnhRw03kCNW9SzgVRKLX8A-EEHUpq5h9u1oLzUcKmExpeknL9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n {   \"id\":2, \r\n  \"title\":\"test1\",\r\n   \"release_date\":\"2023-03-03\"                                                                                                       \r\n  }"
+				},
+				"url": {
+					"raw": "https://render-api-example.onrender.com/movies",
+					"protocol": "https",
+					"host": [
+						"render-api-example",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtwSWlmTVNya3VyRzZHanV1cVhtRiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5a3JpdGkudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0ZjAyYTEzODI3Nzc5YmE5NmVkZWQwYSIsImF1ZCI6Im1vdmllcyIsImlhdCI6MTY5MzgwNDE2NywiZXhwIjoxNjkzODkwNTY3LCJhenAiOiJjNEx2cW1tTm4xblg1aVUwcFZjcnMxNFNhNTFMaExRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.Hv-2cmG8EsjST0HjR1PyT9hBK5AYiWe2q_J7EoF0EuNpLJSQA_TkdEWsK0L7AVMWLwRFea2UwiDkArtkRPt-1WLZYoaInFGojFZguPymqK2fFsapRwVhvIMS_fDvczX4KHu8VBU4FxCdqOj_BlmaWAUfdqeKAV9PZtvCbWgjaITZoh09hxUnLIwXMUy-ibflp2Pj0ckOiIWePsTIOH-Fk25aqKS1AT1tTDhAaq17hlvlWVALUiZpw6AJdMrRGTrE_5cwhg0W-dLXgt6cxVpGomrUPj_Uh5Xc2qmJCnhRw03kCNW9SzgVRKLX8A-EEHUpq5h9u1oLzUcKmExpeknL9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://render-api-example.onrender.com/movies/2",
+					"protocol": "https",
+					"host": [
+						"render-api-example",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"movies",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtwSWlmTVNya3VyRzZHanV1cVhtRiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5a3JpdGkudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0ZjAyYTEzODI3Nzc5YmE5NmVkZWQwYSIsImF1ZCI6Im1vdmllcyIsImlhdCI6MTY5MzgwNDE2NywiZXhwIjoxNjkzODkwNTY3LCJhenAiOiJjNEx2cW1tTm4xblg1aVUwcFZjcnMxNFNhNTFMaExRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.Hv-2cmG8EsjST0HjR1PyT9hBK5AYiWe2q_J7EoF0EuNpLJSQA_TkdEWsK0L7AVMWLwRFea2UwiDkArtkRPt-1WLZYoaInFGojFZguPymqK2fFsapRwVhvIMS_fDvczX4KHu8VBU4FxCdqOj_BlmaWAUfdqeKAV9PZtvCbWgjaITZoh09hxUnLIwXMUy-ibflp2Pj0ckOiIWePsTIOH-Fk25aqKS1AT1tTDhAaq17hlvlWVALUiZpw6AJdMrRGTrE_5cwhg0W-dLXgt6cxVpGomrUPj_Uh5Xc2qmJCnhRw03kCNW9SzgVRKLX8A-EEHUpq5h9u1oLzUcKmExpeknL9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n { \r\n  \"title\":\"test1\",\r\n   \"release_date\":\"2023-03-03\"                                                                                                       \r\n  }"
+				},
+				"url": {
+					"raw": "https://render-api-example.onrender.com/movies/1",
+					"protocol": "https",
+					"host": [
+						"render-api-example",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtwSWlmTVNya3VyRzZHanV1cVhtRiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5a3JpdGkudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0ZjAyYTEzODI3Nzc5YmE5NmVkZWQwYSIsImF1ZCI6Im1vdmllcyIsImlhdCI6MTY5MzgwNDE2NywiZXhwIjoxNjkzODkwNTY3LCJhenAiOiJjNEx2cW1tTm4xblg1aVUwcFZjcnMxNFNhNTFMaExRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.Hv-2cmG8EsjST0HjR1PyT9hBK5AYiWe2q_J7EoF0EuNpLJSQA_TkdEWsK0L7AVMWLwRFea2UwiDkArtkRPt-1WLZYoaInFGojFZguPymqK2fFsapRwVhvIMS_fDvczX4KHu8VBU4FxCdqOj_BlmaWAUfdqeKAV9PZtvCbWgjaITZoh09hxUnLIwXMUy-ibflp2Pj0ckOiIWePsTIOH-Fk25aqKS1AT1tTDhAaq17hlvlWVALUiZpw6AJdMrRGTrE_5cwhg0W-dLXgt6cxVpGomrUPj_Uh5Xc2qmJCnhRw03kCNW9SzgVRKLX8A-EEHUpq5h9u1oLzUcKmExpeknL9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://render-api-example.onrender.com/actors",
+					"protocol": "https",
+					"host": [
+						"render-api-example",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtwSWlmTVNya3VyRzZHanV1cVhtRiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5a3JpdGkudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0ZjAyYTEzODI3Nzc5YmE5NmVkZWQwYSIsImF1ZCI6Im1vdmllcyIsImlhdCI6MTY5MzgwNDE2NywiZXhwIjoxNjkzODkwNTY3LCJhenAiOiJjNEx2cW1tTm4xblg1aVUwcFZjcnMxNFNhNTFMaExRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.Hv-2cmG8EsjST0HjR1PyT9hBK5AYiWe2q_J7EoF0EuNpLJSQA_TkdEWsK0L7AVMWLwRFea2UwiDkArtkRPt-1WLZYoaInFGojFZguPymqK2fFsapRwVhvIMS_fDvczX4KHu8VBU4FxCdqOj_BlmaWAUfdqeKAV9PZtvCbWgjaITZoh09hxUnLIwXMUy-ibflp2Pj0ckOiIWePsTIOH-Fk25aqKS1AT1tTDhAaq17hlvlWVALUiZpw6AJdMrRGTrE_5cwhg0W-dLXgt6cxVpGomrUPj_Uh5Xc2qmJCnhRw03kCNW9SzgVRKLX8A-EEHUpq5h9u1oLzUcKmExpeknL9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"age\": 23,\"gender\": \"F\",  \"name\": \"test\",\"id\":2  }"
+				},
+				"url": {
+					"raw": "https://render-api-example.onrender.com/actors",
+					"protocol": "https",
+					"host": [
+						"render-api-example",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtwSWlmTVNya3VyRzZHanV1cVhtRiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5a3JpdGkudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0ZjAyYTEzODI3Nzc5YmE5NmVkZWQwYSIsImF1ZCI6Im1vdmllcyIsImlhdCI6MTY5MzgwNDE2NywiZXhwIjoxNjkzODkwNTY3LCJhenAiOiJjNEx2cW1tTm4xblg1aVUwcFZjcnMxNFNhNTFMaExRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.Hv-2cmG8EsjST0HjR1PyT9hBK5AYiWe2q_J7EoF0EuNpLJSQA_TkdEWsK0L7AVMWLwRFea2UwiDkArtkRPt-1WLZYoaInFGojFZguPymqK2fFsapRwVhvIMS_fDvczX4KHu8VBU4FxCdqOj_BlmaWAUfdqeKAV9PZtvCbWgjaITZoh09hxUnLIwXMUy-ibflp2Pj0ckOiIWePsTIOH-Fk25aqKS1AT1tTDhAaq17hlvlWVALUiZpw6AJdMrRGTrE_5cwhg0W-dLXgt6cxVpGomrUPj_Uh5Xc2qmJCnhRw03kCNW9SzgVRKLX8A-EEHUpq5h9u1oLzUcKmExpeknL9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://render-api-example.onrender.com/actors/2",
+					"protocol": "https",
+					"host": [
+						"render-api-example",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"actors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtwSWlmTVNya3VyRzZHanV1cVhtRiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5a3JpdGkudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0ZjAyYTEzODI3Nzc5YmE5NmVkZWQwYSIsImF1ZCI6Im1vdmllcyIsImlhdCI6MTY5MzgwNDE2NywiZXhwIjoxNjkzODkwNTY3LCJhenAiOiJjNEx2cW1tTm4xblg1aVUwcFZjcnMxNFNhNTFMaExRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.Hv-2cmG8EsjST0HjR1PyT9hBK5AYiWe2q_J7EoF0EuNpLJSQA_TkdEWsK0L7AVMWLwRFea2UwiDkArtkRPt-1WLZYoaInFGojFZguPymqK2fFsapRwVhvIMS_fDvczX4KHu8VBU4FxCdqOj_BlmaWAUfdqeKAV9PZtvCbWgjaITZoh09hxUnLIwXMUy-ibflp2Pj0ckOiIWePsTIOH-Fk25aqKS1AT1tTDhAaq17hlvlWVALUiZpw6AJdMrRGTrE_5cwhg0W-dLXgt6cxVpGomrUPj_Uh5Xc2qmJCnhRw03kCNW9SzgVRKLX8A-EEHUpq5h9u1oLzUcKmExpeknL9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"age\": 23,\"gender\": \"F\",  \"name\": \"test\"  }"
+				},
+				"url": {
+					"raw": "https://render-api-example.onrender.com/actors/1",
+					"protocol": "https",
+					"host": [
+						"render-api-example",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"actors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
