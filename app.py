@@ -7,10 +7,8 @@ from auth import AuthError, requires_auth
 from models import  setup_db, Movie, Actor
 
 
-def create_app(test_config=None):
-    
+def create_app(test_config=None):   
     app = Flask(__name__)
-   
     setup_db(app)
     CORS(app)
     CORS(app, resources={"/": {"origins": "*"}})
@@ -239,7 +237,7 @@ def create_app(test_config=None):
         res.status_code = ex.status_code
         return res
     
-    if __name__ == "__main__":
-         app = create_app()
-         app.run()
+if __name__ == "__main__":
+        app = create_app()
+        app.run()
      
