@@ -239,4 +239,5 @@ def create_app(test_config=None):
         res.status_code = ex.status_code
         return res
     
-    app = create_app()
+    if __name__ == "__main__":
+     app.run()
