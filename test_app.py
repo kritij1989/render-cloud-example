@@ -3,7 +3,7 @@ import unittest
 import json
 from flask_sqlalchemy import SQLAlchemy
 from app import create_app
-from models import setup_db, Actor, Movie
+from flask import Flask, render_template, request, abort, jsonify
 
 # TEST CASE CLASS
 
@@ -24,7 +24,7 @@ class CastingAgencyProjectTestClass(unittest.TestCase):
         self.producer_auth_header = {'Authorization':
                                      'Bearer ' + PRODUCER_TOKEN}
 
-        self.app = create_app()
+        self.app = Flask(__name__)
         self.client = self.app.test_client
 
 
