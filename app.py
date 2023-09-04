@@ -239,4 +239,4 @@ def create_app(test_config=None):
         res.status_code = ex.status_code
         return res
     
-    return app
+    app = create_app()
